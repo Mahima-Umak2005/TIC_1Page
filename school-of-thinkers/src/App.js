@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header/header.js';
+import HeroSection from './components/HeroSection/herosection.js';
+import ValueProposition from './components/ValueProposition/ValueProposition.js';
+import Products from './components/Products/products.js/index.js';
+import ThinkersClub from './components/ThinkersClub/ThinkersClub.js';
+import InvestorsTable from './components/InvestorsTable/InvestorsTable.js';
+import Community from './components/Community/Community.js';
+import Testimonials from './components/Testimonials/Testimonials.js';
+import CTA from './components/CTA/CTA';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <HeroSection />
+      <ValueProposition />
+      <Products />
+      <ThinkersClub />
+      <InvestorsTable />
+      <Community />
+      <Testimonials />
+      <CTA />
+      <FAQ />
     </div>
   );
 }
